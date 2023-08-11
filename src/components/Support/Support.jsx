@@ -75,7 +75,7 @@ const Support = () => {
 
                   <div className="per gap-3 p-10 flex flex-col items-center ">
                     <a href="#alumniS" className="text-2xl">
-                      <h2>Sushant Shah</h2>
+                      <h2>Rohan Shah</h2>
                     </a>
                     <img src={img1} alt="" className="w-32" />
                     <span>Post</span>
@@ -109,7 +109,7 @@ const Support = () => {
 
                   <div className="per gap-3 p-10 flex flex-col items-center ">
                     <a href="#alumniS" className="text-2xl">
-                      <h2>Sushant Shah</h2>
+                      <h2>Rohit Rokya</h2>
                     </a>
                     <img src={img1} alt="" className="w-32" />
                     <span>Post</span>
@@ -150,7 +150,7 @@ const Support = () => {
                 <div className="content flex flex-row gap-24 p-10">
                   <div className="per gap-3 p-10 flex flex-col items-center ">
                     <a href="#alumniS" className="text-2xl">
-                      <h2>Sushant Shah</h2>
+                      <h2>Sagar Khanal</h2>
                     </a>
                     <img src={img1} alt="" className="w-32" />
                     <span>Post</span>
@@ -184,7 +184,7 @@ const Support = () => {
 
                   <div className="per  gap-3 p-10 flex flex-col items-center ">
                     <a href="#alumniS" className="text-2xl">
-                      <h2>Sushant Shah</h2>
+                      <h2>Sabin Basyal</h2>
                     </a>
                     <img src={img1} alt="" className="w-32" />
                     <span>Post</span>
@@ -218,7 +218,7 @@ const Support = () => {
 
                   <div className="per  gap-3 p-10 flex flex-col items-center ">
                     <a href="#alumniS" className="text-2xl">
-                      <h2>Sushant Shah</h2>
+                      <h2>Bhupendra Pandey</h2>
                     </a>
                     <img src={img1} alt="" className="w-32" />
                     <span>Post</span>

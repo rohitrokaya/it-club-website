@@ -152,3 +152,29 @@ textarea {
   height: 15vh;
   padding: 10px;
 }
+
+/* About Us  */
+#aboutPage img{
+  border: 3px solid #fff;
+  border-radius: 15px;
+  width: 35vw;
+  height: 34vh;
+}
+
+/* Animation  */
+#about-us {
+  animation: slide-in 2s ease-in-out;
+  font-size: 30px;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

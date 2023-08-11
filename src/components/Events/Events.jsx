@@ -6,7 +6,7 @@ const Events = () => {
     <div id="events" className="Mwidth bg-gradient-to-b from-gray-800 to-black h-auto w-full py-5 text-white ">
       <div className="">
       <h1 className="text-7xl font-title font-bold mt-28 mb-10 flex justify-center items-center">Events</h1>
-      <p className="text-2xl flex flex-col justify-center items-center">Our Events Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.</p>
+      <p className="text-2xl flex flex-col justify-center items-center">Eventful Moments: A Snapshot of Activities</p>
         <EventsSlider />
       </div>
     </div>

@@ -21,7 +21,10 @@ import slide_image_9 from "../../images/events/OrphanagesHome.jpg";
 import slide_image_10 from "../../images/events/PrizesOfITFest.jpg";
 import slide_image_11 from "../../images/events/donationToOrphanage.jpg";
 
-import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill} from "react-icons/bs"
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
@@ -53,13 +56,13 @@ const EventsSlider = () => {
   };
 
   const sliderArrowStyle = {
-    background: "var(--white)",
-    width: "3.5rem",
-    height: "3.5rem",
+    background: "#E9E7FA",
+    width: "4rem",
+    height: "4rem",
     borderRadius: "50%",
     left: "42%",
     transform: "translateX(-42%)",
-    filter: "drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1))",
+    filter: "drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.5))",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -71,7 +74,6 @@ const EventsSlider = () => {
     fontSize: "1.5rem",
     fontWeight: "bold",
   };
-
 
   // Ref to the Swiper instance
   const swiperRef = useRef(null);
@@ -88,9 +90,12 @@ const EventsSlider = () => {
     }
   };
   const handleReadMore = () => {
-    let a = document.getElementsByTagName('p');
-    // a.style.fontSize = "1.5rem";
-  }
+    // const collection = document.getElementsByClassName("alumniContent");
+    // for (let i = 0; i < collection.length; i++) {
+    //   collection[i].innerText = 'Bla bla bla';
+    // } 
+    //  APPLY TW VAYO BUT SABAI MA VAYOOOOOO
+  };
   return (
     <div style={containerStyle}>
       <Swiper
@@ -116,95 +121,188 @@ const EventsSlider = () => {
         ref={swiperRef} // Assign the ref to the Swiper instance
       >
         {/* Buttons for navigating backward and forward */}
-      <div style={sliderControlerStyle}>
-        <div className="absolute top-[-400px] px-[2000px] left-[-950px] font-bold">
-        <div
-          className="swiper-button-prev slider-arrow"
-          style={{ ...sliderArrowStyle, left: "30%" }}
-          onClick={handlePrevClick} // Add onClick event to navigate backward
-        >
-          <ion-icon name="arrow-back-outline" style={sliderButtonTextStyle}></ion-icon>
+        <div style={sliderControlerStyle}>
+          <div className="absolute top-[-400px] px-[2000px] left-[-950px] font-bold">
+            <div
+              className="swiper-button-prev slider-arrow"
+              style={{ ...sliderArrowStyle, left: "30%" }}
+              onClick={handlePrevClick} // Add onClick event to navigate backward
+            >
+              <ion-icon
+                name="arrow-back-outline"
+                style={sliderButtonTextStyle}
+              ></ion-icon>
+            </div>
+            <div
+              className="swiper-button-next slider-arrow"
+              style={{ ...sliderArrowStyle, left: "54%" }}
+              onClick={handleNextClick} // Add onClick event to navigate forward
+            >
+              <ion-icon
+                name="arrow-forward-outline"
+                style={sliderButtonTextStyle}
+              ></ion-icon>
+            </div>
+          </div>
         </div>
-        <div
-          className="swiper-button-next slider-arrow"
-          style={{ ...sliderArrowStyle, left: "54%" }}
-          onClick={handleNextClick} // Add onClick event to navigate forward
-        >
-          
-          <ion-icon name="arrow-forward-outline" style={sliderButtonTextStyle}></ion-icon>
+        <div className="events-swiper">
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              Club Interview
+            </p>
+            <img src={slide_image_1} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              After Club Interview
+            </p>
+            <img src={slide_image_2} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              At KU IT MEET
+            </p>
+            <img src={slide_image_3} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              CCRC It Fest
+            </p>
+            <img src={slide_image_4} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              Minds Attending Workshop
+            </p>
+            <img src={slide_image_5} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              Farewell
+            </p>
+            <img src={slide_image_6} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              ITians
+            </p>
+            <img src={slide_image_7} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              KU IT MEET Visit
+            </p>
+            <img src={slide_image_8} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              Orphanages Home
+            </p>
+            <img src={slide_image_9} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              Prizes of ITFest
+            </p>
+            <img src={slide_image_10} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          <SwiperSlide style={swiperSlideStyle}>
+            <p className="flex flex-col justify-center items-center text-5xl text-blue-100 font-oswald p-5">
+              Donation To Orphanage
+            </p>
+            <img src={slide_image_11} alt="slide_image" />
+            <p className="alumniContent text-2xl text-blue-200 font-kumbhsans my-8">
+              Content Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Iste, ea!...
+              <button className="text-[18px]" onClick={handleReadMore}>
+                Read More
+              </button>
+            </p>
+          </SwiperSlide>
+
+          {/* Rest of the slides... */}
         </div>
-        </div>
-        <div className="swiper-pagination bg-white px-5 mx-5"></div>
-      </div>
-      <div className="events-swiper">
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-        <SwiperSlide style={swiperSlideStyle}>
-          <p className="flex flex-col justify-center items-center text-4xl text-blue-300 p-5">EventName</p>
-          <img src={slide_image_1} alt="slide_image" />
-          <p className="alumniContent text-2xl text-blue-300">Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ea!...
-          <button className="text-[18px]" onClick={handleReadMore}>Read More</button>
-          </p>
-        </SwiperSlide>
-        
-      </div>
-        {/* Rest of the slides... */}
       </Swiper>
-      
     </div>
   );
 };

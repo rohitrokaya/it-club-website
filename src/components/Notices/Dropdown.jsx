@@ -16,7 +16,7 @@ function Dropdown() {
           onClick={() => setIsOpen1((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 1</h1>
+          <h1>NOTICE 1: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
           {isOpen1 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen1 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>
@@ -32,7 +32,7 @@ function Dropdown() {
           onClick={() => setIsOpen2((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 2</h1>
+          <h1>NOTICE 2 : Lorem ipsum dolor sit amet consectetur.</h1>
           {isOpen2 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen2 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>
@@ -48,7 +48,7 @@ function Dropdown() {
           onClick={() => setIsOpen3((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 3</h1>
+          <h1>NOTICE 3 : Lorem ipsum dolor sit amet consectetur.</h1>
           {isOpen3 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen3 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>
@@ -64,7 +64,7 @@ function Dropdown() {
           onClick={() => setIsOpen4((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 4</h1>
+          <h1>NOTICE 4 : Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
           {isOpen4 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen4 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>

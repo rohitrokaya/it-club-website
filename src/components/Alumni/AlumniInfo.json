@@ -35,6 +35,13 @@
     "email": ""
   },
   {
+    "alumniName": "Sushant Shah",
+    "image": "../images/Alumni/.jpg",
+    "position": "Executive Member",
+    "contact": "9741678294",
+    "email": "sushantshah0409@gmail.com"
+  },
+  {
     "alumniName": "Bhupendra Pandey",
     "image": "../images/Alumni/.jpg",
     "position": "IT Head",
@@ -109,13 +116,6 @@
     "image": "../images/Alumni/.jpg",
     "position": "Executive Member",
     "contact": "9749231129",
-    "email": ""
-  },
-  {
-    "alumniName": "",
-    "image": "../images/Alumni/.jpg",
-    "position": "Executive Member",
-    "contact": "]",
     "email": ""
   },
   {

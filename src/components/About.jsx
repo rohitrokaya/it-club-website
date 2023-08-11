@@ -1,14 +1,22 @@
-import React from "react";
-import img1 from "../images/aboutUs.jpg";
+import React, { useRef, useEffect } from "react";
+import img1 from "../images/about/farewell.jpeg";
+import img2 from "../images/about/donationToOrphanage.jpg";
+import img3 from "../images/about/ccrcitfest.jpg";
+import img4 from "../images/about/Farewell.jpg";
 
 const About = () => {
+
   return (
-    <section id='aboutPage' className="Mwidth w-full h-auto bg-gradient-to-b from-gray-800 to-black">
-      {/* bg-gradient-to-b from-gray-800 to-black */}
+    <section
+      id="aboutPage"
+      className="Mwidth w-full h-auto bg-gradient-to-b from-gray-800 to-black"
+    >
+      {/* animation */}
+      
       <div className="">
         <div className="flex flex-col items-center p-10 text-gray-50">
           <h1 className="text-7xl font-title font-bold my-10">About Us</h1>
-          <h3 className="text-3xl font-another">CLUB MOTTO</h3>
+          <h3 className="text-3xl font-another">Making a difference</h3>
         </div>
         <div className="text-gray-50 flex flex-col items-center">
           <p className="text-2xl mx-10 py-4">
@@ -60,24 +68,18 @@ const About = () => {
       <div className="image py-10">
         <div className="flex justify-evenly py-10">
           <div>
-            <img src={img1} alt="" className=" w-[400px] h-[240px]" />
+            <img src={img1} alt="" />
           </div>
           <div>
-            <img src={img1} alt="" className=" w-[400px] h-[240px]" />
-          </div>
-          <div>
-            <img src={img1} alt="" className=" w-[400px] h-[240px]" />
+            <img src={img2} alt="" />
           </div>
         </div>
         <div className="flex justify-evenly my-5">
           <div>
-            <img src={img1} alt="" className=" w-[400px] h-[240px]" />
+            <img src={img3} alt="" />
           </div>
           <div>
-            <img src={img1} alt="" className=" w-[400px] h-[240px]" />
-          </div>
-          <div>
-            <img src={img1} alt="" className=" w-[400px] h-[240px]" />
+            <img src={img4} alt="" />
           </div>
         </div>
       </div>
