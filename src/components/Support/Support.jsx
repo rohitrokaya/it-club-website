@@ -5,18 +5,43 @@ import { FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 import { BiSolidPhoneCall } from "react-icons/bi";
-
+import { AiFillCaretDown } from "react-icons/ai";
 
 const Support = () => {
+  const [copyTextGmail, setCopyTextGmail] = useState("ccrcitclub2077@gmail.com");
+  const [copiedGamil, setCopiedGamil] = useState(false);
+  const handleCopyClickGmail = () => {
+    navigator.clipboard
+      .writeText(copyTextGmail)
+      .then(() => {
+        setCopiedGamil(true);
+      })
+      .catch((err) => {
+        console.error("Copy failed:", err);
+      });
+  };
+  const [copyTextCont, setCopyTextCont] = useState("+977-9841414141");
+  const [copiedCont, setCopiedCont] = useState(false);
+  const handleCopyClickCont = () => {
+    navigator.clipboard
+      .writeText(copyTextCont)
+      .then(() => {
+        setCopiedCont(true);
+      })
+      .catch((err) => {
+        console.error("Copy failed:", err);
+      });
+  };
+
   const [fromsMsg, setFromsMsg] = useState(false);
   const handleSendMsg = () => {
     setFromsMsg(!fromsMsg);
-    if(fromsMsg == true){
-      document.getElementById("msg-forms").innerText = 'Your message is sent. Thank you!'; //Wanted to make the reverse button but cant make
+    if (fromsMsg == true) {
+      document.getElementById("msg-forms").innerText =
+        "Your message is sent. Thank you!"; //Wanted to make the reverse button but cant make
     }
-  } // Make these! Means style it, Just written only ryt now!
+  }; // Make these! Means style it, Just written only ryt now!
   return (
-    
     <div>
       <div
         id="support"
@@ -255,35 +280,61 @@ const Support = () => {
           </div>
         </div>
 
-        <h1 className=" text-5xl mt-5 flex justify-center items-center font-title2 ">Any Queries?</h1>
+        <h1 className=" text-5xl mt-5 flex justify-center items-center font-title2 ">
+          Any Queries?
+        </h1>
         <div className="contactUs w-full h-auto flex flex-row justify-between p-10">
           
           <div className="left w-[30%] p-5 flex flex-col justify-center">
-            <div className="gmail flex items-center p-3 gap-5 hover:text-[#6AD053]">
-            <SiGmail size={50}  /> <span>Gmail</span>
-            <p>ccrcitclub2077@gmail.com</p>
+          <div className="flex justify-center items-center text-xl my-10 gap-3">Click to copy <AiFillCaretDown/></div>
+            <div className="gmail flex flex-col">
+              <div onClick={handleCopyClickGmail} className="flex flex-row items-center p-3 gap-5 hover:text-[#6AD053] cursor-pointer">
+                <SiGmail size={50} /> <span>Gmail</span>
+                <p>{copyTextGmail}</p>
+              </div>
+              <div className="flex flex-row justify-center items-center">
+              <span>{copiedGamil ? "CopiedGamil!" : ""}</span>
+              </div>
             </div>
-            <div className="contactNum flex items-center p-3 gap-5 hover:text-[#4285f4]">
-              <BiSolidPhoneCall size={50} className=""/> <span>Call Us</span>
-              <p>+977-9841414141</p>
+            <div className="contactNum flex flex-col">
+              <div onClick={handleCopyClickCont} className="flex items-center p-3 gap-5 hover:text-[#4285f4] cursor-pointer">
+                <BiSolidPhoneCall size={50} /> <span>Call Us</span>
+                <p>{copyTextCont}</p>
+              </div>
+              <div className="flex flex-row justify-center items-center">
+              <span>{copiedCont ? "CopiedNumber!" : ""}</span>
+              </div>
             </div>
           </div>
+
           <div className="right w-[70%] p-2">
             <div className="container">
-              <h1 className=" text-3xl text-blue-300 font-para p-4">Send Us Message: </h1>
-              <div id="msg-forms" className="flex flex-col p-3 gap-3 text-[18px]">
+              <h1 className=" text-3xl text-blue-300 font-para p-4">
+                Send Us Message:{" "}
+              </h1>
+              <div
+                id="msg-forms"
+                className="flex flex-col p-3 gap-3 text-[18px]"
+              >
                 <div className="mem-name flex flex-row items-center gap-3">
-                <label htmlFor="fname">First Name</label>
-                <input type="text" id="fname"/>
-                <label htmlFor="lname">Last Name</label>
-                <input type="text" id="lname"/>
+                  <label htmlFor="fname">First Name</label>
+                  <input type="text" id="fname" />
+                  <label htmlFor="lname">Last Name</label>
+                  <input type="text" id="lname" />
                 </div>
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" />
                 <label htmlFor="message">Message</label>
-                <textarea type="text" id="message" >Hello there!,</textarea>
+                <textarea type="text" id="message">
+                  Hello there!,
+                </textarea>
                 <div className="button">
-                  <button className="border-2 rounded-xl p-3 bg-[#20AD96]" onClick={handleSendMsg}>Send Message</button>
+                  <button
+                    className="border-2 rounded-xl p-3 bg-[#20AD96]"
+                    onClick={handleSendMsg}
+                  >
+                    Send Message
+                  </button>
                 </div>
               </div>
             </div>

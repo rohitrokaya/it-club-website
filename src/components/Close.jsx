@@ -11,10 +11,11 @@ const Close = () => {
   };
 
   return (
-    <div className="">
-      <input type="text" placeholder="Search" onClick={togglePopup} className=""/>
-      {/* <CgSearch size={30}/> */}
-      
+    <div id='close' className="flex justify-center items-center p-2">
+      <div className="close flex flex-row justify-center items-center mx-2">
+        <input type="text" placeholder="Search" onClick={togglePopup}/>
+        <CgSearch size={30} onClick={togglePopup} className='m-2'/>
+      </div>
       <button>Search</button>
 
       {showPopup && (
