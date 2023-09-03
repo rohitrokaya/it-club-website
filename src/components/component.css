@@ -120,11 +120,24 @@ textarea {
 #forms button:hover {
   background: linear-gradient(135deg, #774489, #578eb0);
 }
-
 #forms span {
   font-size: 15px;
 }
 
+#forms .payment span{
+  color: royalblue;
+  background: transparent;
+  border-radius: 20px;
+  border: 1.7px solid rgb(179, 202, 245);
+  width: auto;
+}
+#forms .payment input{
+  width: fit-content;
+  text-decoration: none;
+  padding: 10px;
+  height: 52px;
+
+}
 /* Events  */
 .events-swiper img {
   width: 550px;
@@ -161,7 +174,7 @@ textarea {
   height: 34vh;
 }
 
-/* Animation  */
+/* Animation */
 #about-us {
   animation: slide-in 2s ease-in-out;
   font-size: 30px;
@@ -184,4 +197,12 @@ textarea {
 #close .close{
   border: 1.3px solid #fff;
   border-radius: 15px;
+}
+
+/* Alumni Swiper  */
+#alumni-swiper .alumni-img{
+  overflow: hidden;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
 }

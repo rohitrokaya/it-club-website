@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Logo from "../images/logo-rem.png";
-import Close from "./Close";
 
 import { FaBars, FaTimes, FaFacebook } from 'react-icons/fa';
 import {SiGmail} from 'react-icons/si';
-import {BsFillPersonLinesFill, BsYoutube} from 'react-icons/bs';
+import {BsYoutube} from 'react-icons/bs';
 import {AiFillInstagram} from 'react-icons/ai';
  
 const Navbar = () => {
@@ -12,8 +11,9 @@ const Navbar = () => {
 
   return (
     // Logo
-    <div className="Mwidth flex justify-between items-center fixed w-full h-20 px-6 bg-neutral-900 text-white z-10">
-      <div className=" w-24 h-24 py-1 px-2">
+
+    <div id="navbar" className="flex justify-between items-center fixed w-full h-20 px-6 bg-neutral-900 text-white z-10">
+      <div className="logo w-24 h-24 py-1 px-2">
         <a href="/">
           <img src={Logo} alt="LOGO" className="w-50 h-50 hover:scale-90 duration-200" />
         </a>
@@ -50,37 +50,32 @@ const Navbar = () => {
       {nav && (
         <ul onClick={() => {
           setNav(!nav);
-        }} className="Mwidth flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        }} className="fixed flex flex-col justify-center items-center top-0 left-0 w-screen h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500 gap-3">
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a href="#home">Home</a>
+            <a href="#homeM">Home</a>
             </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <a href="#aboutPage">About Us</a>
+          <a href="#aboutPageM">About Us</a>
           </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <a href="#alumni">Alumni</a>
+          <a href="#alumniM">Alumni</a>
           </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <a href="#events">Events</a>
+          <a href="#eventsM">Events</a>
           </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <a href="#notice">Notice</a>
+          <a href="#noticeM">Notice</a>
           </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <a href="#forms">Forms</a>
+          <a href="#formsM">Forms</a>
           </li>
           <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <a href="#support">Support</a>
+          <a href="#supportM">Support</a>
           </li>
           
         </ul>
       )}
       
-
-      <div>
-        {/* <Popup/> One Error I guess But its working */}
-        <Close/>
-      </div>
 
       <div
         onClick={() => {

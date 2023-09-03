@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import "./components/popup.css";
+import "./components/component.css";
 import About from "./components/About";
 import Alumni from "./components/Alumni/Alumni";
 import Events from "./components/Events/Events";
@@ -11,8 +11,8 @@ import Support from "./components/Support/Support";
 function App() {
 
   return (
-    <>
-      <Navbar />
+    <div id="app" className="w-full">
+      <Navbar/>
       <Home/>
       <About />
       <Alumni /> 
@@ -20,7 +20,7 @@ function App() {
       <Notice />
       <Forms />
       <Support />
-    </>
+    </div>
   );
 }
 

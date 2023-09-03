@@ -97,7 +97,7 @@ const EventsSlider = () => {
     //  APPLY TW VAYO BUT SABAI MA VAYOOOOOO
   };
   return (
-    <div style={containerStyle}>
+    <div className="eventsSlider" style={containerStyle}>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -121,8 +121,8 @@ const EventsSlider = () => {
         ref={swiperRef} // Assign the ref to the Swiper instance
       >
         {/* Buttons for navigating backward and forward */}
-        <div style={sliderControlerStyle}>
-          <div className="absolute top-[-400px] px-[2000px] left-[-950px] font-bold">
+        <div className="" style={sliderControlerStyle}>
+          <div className="swip-pag absolute top-[-400px] px-[2000px] left-[-950px] font-bold">
             <div
               className="swiper-button-prev slider-arrow"
               style={{ ...sliderArrowStyle, left: "30%" }}
@@ -303,6 +303,7 @@ const EventsSlider = () => {
           {/* Rest of the slides... */}
         </div>
       </Swiper>
+      <div className="text-2xl my-5 flex justify-center items-center p-5 font-title2 font-bold text-blue-500">Swipe Right or Left for more</div>
     </div>
   );
 };

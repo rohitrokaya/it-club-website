@@ -88,12 +88,7 @@
   }
 }
 
-@media (max-width:642px) {
-  .Mwidth{
-    width: 642px;
-    height: auto;
-  }
-}
+
 
 #about-us {
   animation: slide-in 2s ease-in-out;
@@ -110,4 +105,178 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* Responsive */
+@media (max-width:642px) {
+  #app, #home, #navbar, #aboutPage, #alumni, #events, #formsM, #notice, #support{
+    width: 100vw;
+  }
+  #navbar .logo{
+    width: 16vw;
+  }
+
+.pc{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
+  .alumniSwiper{
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+  }
+  .alumni-img{
+    width: 100px;
+  }
+  .name{
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+  .post{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .numb{
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .Aemail{
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .swip{
+    padding-bottom: 50px;
+  }
+  .eventsSlider{
+    width: 80vw;
+  }
+  .eventsSlider .alumniContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+  }
+  .swip-pag{
+    /* display: contents; */
+    display: none;
+  }
+  .notice-title{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  /* Forms  */
+  #formsM input,
+  textarea {
+  height: 30px;
+  width: 80vw;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #dadada;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  font-size: 1.1vh;
+  background: transparent;
+  border: 1.4px solid #dadada;
+  border-radius: 5px;
+}
+#formsM .gender input {
+  height: 15px;
+  position: relative;
+  left: -200px;
+}
+
+#formsM .input-box {
+  margin: 20px 10px;
+}
+#formsM .forms-details {
+  width: 75vw;
+  margin-bottom: 10px;
+  font-weight: 500;
+  display: block;
+  font-size: 1.8vh;
+}
+#formsM textarea {
+  height: 15vh;
+  width: 80vw;
+  padding: 10px 10px;
+  background: transparent;
+  border: 1.4px solid #dadada;
+  border-radius: 5px;
+  font-size: 1.1vh;
+}
+#formsM input:focus,
+#formsM input:valid {
+  border-bottom-color: #9b59b6;
+  border-width: 2px;
+}
+#formsM textarea:focus,
+#formsM textarea:valid {
+  border-bottom-color: #9b59b6;
+  border-width: 2px;
+}
+
+#formsM button {
+  padding: 0;
+  border: 1px solid #dadada;
+  width: 20vw;
+  height: 5vh;
+  display: inline-block;
+  background: linear-gradient(135deg, #578eb0, #774489);
+  font-size: 2vw;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#formsM span {
+  font-size: 15px;
+}
+
+#formsM .payment span{
+  font-size: 2vw;
+  color: royalblue;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid rgb(179, 202, 245);
+  width: auto;
+  padding: 10px;
+}
+#formsM .payment input{
+  width: fit-content;
+  text-decoration: none;
+  padding: 5px;
+  height: 40px;
+}
+
+.titlekumbhM {
+  color: #b2b2dd;
+  font-family: "Kumbh Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+}
+
+/* contact us forms  */
+#msg-formsM input {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  width: 80vw;
+  font-size: 1.5vh;
+  padding: 10px;
+}
+#msg-formsM label {
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+#msg-formsM #messageM{
+  width: 80vw;
+  height: 20vh;
+  padding: 10px;
+  font-size: 1.5vh;
+}
 }

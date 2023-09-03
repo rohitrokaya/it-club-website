@@ -42,6 +42,13 @@
     "email": "sushantshah0409@gmail.com"
   },
   {
+    "alumniName": "Rohan Shah",
+    "image": "../images/Alumni/rohan_shah.jpg",
+    "position": "Executive Member",
+    "contact": "9765751137",
+    "email": "rohankshah345@gmail.com"
+  },
+  {
     "alumniName": "Bhupendra Pandey",
     "image": "../images/Alumni/.jpg",
     "position": "IT Head",
@@ -104,19 +111,13 @@
     "contact": "9804936105",
     "email": "bhattaraiutsav420@gmail.com"
   },
-  {
-    "alumniName": "Rohan Shah",
-    "image": "../images/Alumni/rohan_shah.jpg",
-    "position": "Executive Member",
-    "contact": "9765751137",
-    "email": "rohankshah345@gmail.com"
-  },
+  
   {
     "alumniName": "Nikesh Basnet",
     "image": "../images/Alumni/.jpg",
     "position": "Executive Member",
     "contact": "9749231129",
-    "email": ""
+    "email": "basnetnikesh13@gmail.com"
   },
   {
     "alumniName": "",
