@@ -362,20 +362,20 @@ const Support = () => {
         id="supportM"
         className="hidden mob w-full h-auto bg-gradient-to-b from-black to-gray-800 text-white"
       >
-        <h1 className="text-6xl font-title font-bold text-white flex flex-col justify-center items-center p-8">
+        <h1 className="text-5xl font-title font-bold text-white flex flex-col justify-center items-center pt-8">
           Support Page!
         </h1>
         <div className="get-intouch">
-          <div className="p-4 mx-5 mt-4 titlekumbhM">
+          <div className="mx-5 mt-6 titlekumbhM">
             <h1>Get In Touch with:</h1>
           </div>
           <div className="support flex flex-col justify-center items-center ">
-            <h1 className="text-3xl p-5 font-oswald">
+            <h1 className="text-3xl font-oswald">
               Our Teams are here to help
             </h1>
             <div className="members">
               <div className="frame1 p-2 my-4">
-                <div className="flex justify-center items-center p-5 font-title2 text-5xl text-[#94a8ac] font-bold ">
+                <div className="flex justify-center items-center p-5 font-title2 text-4xl text-[#94a8ac] font-bold ">
                   <h1>Technical Support</h1>
                 </div>
                 <div className="content flex flex-col gap-2 p-1">
@@ -385,7 +385,7 @@ const Support = () => {
                     </a>
                     <img src={img1} alt="" className="w-32 rounded-full" />
                     <span>IT Head</span>
-                    <div className="sociallinks flex flex-row p-5 gap-10">
+                    <div className="sociallinks flex flex-row p-5 gap-4">
                       <a href="https://www.facebook.com/rohitrokaaya" target="_blank">
                         <div className="flex flex-row gap-1 cursor-pointer hover:text-blue-500 duration-200">
                           <FaFacebook size={30} />
@@ -419,7 +419,7 @@ const Support = () => {
                     </a>
                     <img src={img2} alt="" className="w-32 rounded-full" />
                     <span>Executive Member</span>
-                    <div className="sociallinks flex flex-row p-5 gap-10">
+                    <div className="sociallinks flex flex-row p-5 gap-5">
                       <a href="https://www.facebook.com/sushant.shah.313" target="_blank">
                         <div className="flex flex-row gap-1 cursor-pointer hover:text-blue-500 duration-200">
                           <FaFacebook size={30} />
@@ -453,7 +453,7 @@ const Support = () => {
                     </a>
                     <img src={img3} alt="" className="w-32 rounded-full" />
                     <span>Executive Member</span>
-                    <div className="sociallinks flex flex-row p-5 gap-10">
+                    <div className="sociallinks flex flex-row p-5 gap-5">
                       <a href="https://www.facebook.com/rohanbirbikramshah" target="_blank">
                         <div className="flex flex-row gap-1 cursor-pointer hover:text-blue-500 duration-200">
                           <FaFacebook size={30} />
@@ -494,7 +494,7 @@ const Support = () => {
                     </a>
                     <img src={img4} alt="" className="w-32 rounded-full" />
                     <span>President</span>
-                    <div className="sociallinks flex flex-row p-5 gap-10">
+                    <div className="sociallinks flex flex-row p-5 gap-5">
                       <a href="https://www.facebook.com/profile.php?id=100056865650041" target="_blank">
                         <div className="flex flex-row gap-1 cursor-pointer hover:text-blue-500 duration-200">
                           <FaFacebook size={30} />
@@ -528,7 +528,7 @@ const Support = () => {
                     </a>
                     <img src={img5} alt="" className="w-32 rounded-full" />
                     <span>Vice President</span>
-                    <div className="sociallinks flex flex-row p-5 gap-10">
+                    <div className="sociallinks flex flex-row p-5 gap-5">
                       <a href="https://www.facebook.com/profile.php?id=100081209059919" target="_blank">
                         <div className="flex flex-row gap-1 cursor-pointer hover:text-blue-500 duration-200">
                           <FaFacebook size={30} />
@@ -562,7 +562,7 @@ const Support = () => {
                     </a>
                     <img src={img6} alt="" className="w-32 rounded-full" />
                     <span>Webmaster</span>
-                    <div className="sociallinks flex flex-row p-5 gap-10">
+                    <div className="sociallinks flex flex-row p-5 gap-5">
                       <a href="https://www.facebook.com/awm.fan.5" target="_blank">
                         <div className="flex flex-row gap-1 cursor-pointer hover:text-blue-500 duration-200">
                           <FaFacebook size={30} />
@@ -595,20 +595,20 @@ const Support = () => {
           </div>
         </div>
 
-        <h1 className=" text-4xl mt-3 flex justify-center items-center font-title2 ">
+        <h1 className=" text-3xl mt-3 flex justify-center items-center font-title2 ">
           Any Queries?
         </h1>
         <div className="contactUs w-full h-auto flex flex-col justify-between p-10">
-          <div className="left p-5 flex flex-col justify-center">
+          <div className="left flex flex-col justify-center">
             <div className="flex justify-center items-center text-xl my-1 gap-3">
               Click below to copy <AiFillCaretDown />
             </div>
             <div className="gmail flex flex-col">
               <div
                 onClick={handleCopyClickGmail}
-                className="flex flex-row items-center p-3 gap-5 hover:text-[#6AD053] cursor-pointer"
+                className="flex flex-row items-center p-2 gap-5 hover:text-[#6AD053] cursor-pointer"
               >
-                <SiGmail size={30} /> <span>Gmail</span>
+                <span>Gmail:</span>
                 <p>{copyTextGmail}</p>
               </div>
               <div className="flex flex-row justify-center items-center">
@@ -618,9 +618,9 @@ const Support = () => {
             <div className="contactNum flex flex-col">
               <div
                 onClick={handleCopyClickCont}
-                className="flex items-center p-3 gap-5 hover:text-[#4285f4] cursor-pointer"
+                className="flex items-center p-2 gap-5 hover:text-[#4285f4] cursor-pointer"
               >
-                <BiSolidPhoneCall size={30} /> <span>Call Us</span>
+                <span>Call Us:</span>
                 <p>{copyTextCont}</p>
               </div>
               <div className="flex flex-row justify-center items-center">
@@ -629,14 +629,14 @@ const Support = () => {
             </div>
           </div>
 
-          <div className="right p-2">
+          <div className="right">
             <div className="container">
-              <h1 className=" text-3xl text-blue-300 font-para p-4">
+              <h1 className=" text-2xl text-blue-300 font-para font-bold p-4">
                 Send Us Message:{" "}
               </h1>
               <div
                 id="msg-formsM"
-                className="flex flex-col p-3 gap-3 text-[16px]"
+                className="flex flex-col gap-3 text-[16px]"
               >
                 <div className="mem-name flex flex-col gap-1">
                   <label htmlFor="fname">First Name</label>
@@ -650,7 +650,7 @@ const Support = () => {
                 <textarea type="text" id="messageM">
                   Hello there!,
                 </textarea>
-                <div className="button">
+                <div className="button flex justify-center items-center">
                   <button
                     className="border-2 rounded-xl p-3 bg-[#20AD96]"
                     onClick={handleSendMsg}

@@ -303,7 +303,6 @@ const EventsSlider = () => {
           {/* Rest of the slides... */}
         </div>
       </Swiper>
-      <div className="text-2xl my-5 flex justify-center items-center p-5 font-title2 font-bold text-blue-500">Swipe Right or Left for more</div>
     </div>
   );
 };

@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     // Logo
 
-    <div id="navbar" className="flex justify-between items-center fixed w-full h-20 px-6 bg-neutral-900 text-white z-10">
-      <div className="logo w-24 h-24 py-1 px-2">
+    <div id="navbar" className="flex flex-row justify-between items-center fixed w-full h-20 px-6 bg-neutral-900 text-white z-10">
+      <div className="flex flex-row justify-center items-center logo w-24 h-24 py-1 px-2">
         <a href="/">
           <img src={Logo} alt="LOGO" className="w-50 h-50 hover:scale-90 duration-200" />
         </a>
@@ -51,25 +51,25 @@ const Navbar = () => {
         <ul onClick={() => {
           setNav(!nav);
         }} className="fixed flex flex-col justify-center items-center top-0 left-0 w-screen h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500 gap-3">
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
             <a href="#homeM">Home</a>
             </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
           <a href="#aboutPageM">About Us</a>
           </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
           <a href="#alumniM">Alumni</a>
           </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
           <a href="#eventsM">Events</a>
           </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
           <a href="#noticeM">Notice</a>
           </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
           <a href="#formsM">Forms</a>
           </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          <li className="px-4 cursor-pointer capitalize py-4 text-4xl font-bold text-slate-300">
           <a href="#supportM">Support</a>
           </li>
           

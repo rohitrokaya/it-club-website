@@ -198,11 +198,3 @@ textarea {
   border: 1.3px solid #fff;
   border-radius: 15px;
 }
-
-/* Alumni Swiper  */
-#alumni-swiper .alumni-img{
-  overflow: hidden;
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-}

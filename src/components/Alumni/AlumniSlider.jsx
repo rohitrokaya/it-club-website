@@ -27,8 +27,8 @@
 //           const { image, alumniName, position, contact, email } = item;
 //           return (
 //             <SwiperSlide key={index}>
-//               <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-//                 <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+//               <div className="swip flex flex-col gap-12">
+//                 <div className="alumni-img">
 //                   <img
 //                     src={image}
 //                     className=""
@@ -97,15 +97,15 @@ const AlumniSlider = () => {
       >
         
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image1}
                     className=""
                   />
                 </div>
-                <div className="flex flex-col max-w-3xl">
-                  <p className="name text-6xl text-[#CFECEC] font-bold my-5 font-title">
+                <div className="flex flex-col max-w-3xl leading-3">
+                  <p className="name text-6xl text-[#CFECEC] font-bold my-2 font-title">
                   Ananda Lamichhane
                   </p>
                   <p className="post text-3xl">Club Patron </p>
@@ -117,8 +117,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image2}
                     className=""
@@ -137,8 +137,8 @@ const AlumniSlider = () => {
 
             
             {/* <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image3}
                     className=""
@@ -157,8 +157,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image4}
                     className=""
@@ -177,8 +177,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image5}
                     className=""
@@ -197,8 +197,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image6}
                     className=""
@@ -216,8 +216,8 @@ const AlumniSlider = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image7}
                     className=""
@@ -236,8 +236,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image8}
                     className=""
@@ -256,8 +256,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image9}
                     className=""
@@ -276,8 +276,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image10}
                     className=""
@@ -296,8 +296,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image11}
                     className=""
@@ -316,8 +316,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image12}
                     className=""
@@ -336,8 +336,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image13}
                     className=""
@@ -356,8 +356,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image14}
                     className=""
@@ -376,8 +376,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image15}
                     className=""
@@ -396,8 +396,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image16}
                     className=""
@@ -416,8 +416,8 @@ const AlumniSlider = () => {
 
             
             <SwiperSlide>
-              <div className="swip flex flex-col lg:flex-row gap-12 lg:gap-32">
-                <div className="alumni-img lg:w-[328px] lg:h-[328px]">
+              <div className="swip flex flex-col gap-12">
+                <div className="alumni-img">
                   <img
                     src={image17}
                     className=""
@@ -436,8 +436,7 @@ const AlumniSlider = () => {
 
 
       </Swiper>
-      <div className="text-2xl my-5 flex justify-center items-center p-5 font-title2 font-bold text-blue-500">Swipe Right or Left for more
-    </div>
+      
     </div>
   );
 };

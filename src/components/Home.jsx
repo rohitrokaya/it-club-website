@@ -56,10 +56,10 @@ const Home = () => {
         id="homeM"
         className="hidden mob pt-24 bg-gradient-to-b from-black to-gray-800 h-screen w-screen text-white"
       >
-        <div className="w-screen flex flex-col gap-3 p-10">
-          <div className="flex flex-row gap-20 items-center pb-10">
+        <div className="w-screen flex flex-col gap-2 p-3">
+          <div className="flex flex-row justify-between items-center gap-20 pb-10">
             <div className="hero-left">
-              <h1 className="animate-from-right text-5xl">
+              <h1 className="animate-from-right text-3xl">
                 Welcome <br />
                 to the <br />
                 <p className="">
@@ -71,13 +71,13 @@ const Home = () => {
               <img src={Hero} alt="" className="w-52" />
             </div>
           </div>
-          <p className="text-xl p-5">
+          <p className="text-xl p-3">
             The IT Club is a community of tech enthusiasts who come together to
             learn, share knowledge, and explore the fascinating world of
             technology.
           </p>
 
-          <div className="stats flex text-2xl p-10 gap-5">
+          <div className="stats flex text-2xl p-5 gap-5">
             <span className="stat">
               <h1>Likes:</h1>
               <CountUp start={1000} end={2000} duration={5} />

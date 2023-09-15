@@ -174,15 +174,16 @@ const Forms = () => {
         </div>
       </div>
 
+      {/* Mobile  */}
       <div
         id="formsM"
-        className="hidden mob bg-gradient-to-b from-gray-800 to-black w-full h-auto p-3 py-16"
+        className="hidden mob bg-gradient-to-b from-gray-800 to-black w-full h-auto p-2 py-5"
       >
-        <h1 className="text-6xl font-title font-bold text-white p-5 flex flex-col justify-center items-center ">
+        <h1 className="text-5xl font-title font-bold text-white p-5 flex flex-col justify-center items-center ">
           Form Page!
         </h1>
         <div className=" text-white">
-          <div className="text-4xl flex flex-col justify-center items-center p-5">
+          <div className="text-4xl flex flex-col justify-center items-center p-4">
             CCRC IT CLUB FORM
           </div>
           <form action="/">
@@ -289,11 +290,14 @@ const Forms = () => {
                   id="id10"
                   required
                 ></textarea>
-                <div className="payment flex gap-16 my-5 p-5 w-auto">
+                <div className="payment flex flex-col gap-4 my-5 p-5 w-auto">
                   <p id="formsENumM" className="text-xl">
                     Esewa ID: <p className=" text-slate-300">9849589647</p>
                   </p>
-                  <input type="file" id="screenshot" />
+                  <div className="">
+                  <p className="text-sm py-2">Upload the screenshot of your payment</p>
+                  <input type="file" id="screenshot" className="text-sm font-bold" />
+                  </div>
                 </div>
                 <div className="forms-sr flex flex-row justify-evenly items-center">
                   <button className="font-bold p-1" type="submit">
