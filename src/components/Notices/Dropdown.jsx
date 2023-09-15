@@ -32,7 +32,7 @@ function Dropdown() {
           onClick={() => setIsOpen2((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 2  <span className=" text-blue-300 font-bold">: Lorem ipsum dolor sit amet consectetur... </span></h1>
+          <h1>NOTICE 2  <span className=" text-blue-300 font-bold">: Program 1 </span></h1>
           {isOpen2 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen2 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>
@@ -48,7 +48,7 @@ function Dropdown() {
           onClick={() => setIsOpen3((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 3  <span className=" text-blue-300 font-bold">: Lorem ipsum dolor sit amet consectetur... </span></h1>
+          <h1>NOTICE 3  <span className=" text-blue-300 font-bold">: Regarding Club </span></h1>
           {isOpen3 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen3 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>
@@ -64,7 +64,7 @@ function Dropdown() {
           onClick={() => setIsOpen4((prev) => !prev)}
           className="border-4 border-white p-3 flex"
         >
-          <h1>NOTICE 4  <span className=" text-blue-300 font-bold">: Lorem, ipsum dolor sit amet consectetur adipisicing... </span></h1>
+          <h1>NOTICE 4  <span className=" text-blue-300 font-bold">: Be the member of club </span></h1>
           {isOpen4 && <AiFillCaretUp size={30} className="ml-3 mr-1" />}
           {!isOpen4 && <AiFillCaretDown size={30} className="ml-3 mr-1" />}
         </button>
