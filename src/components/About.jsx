@@ -69,7 +69,7 @@ const About = () => {
       <div className="image py-10">
         <div className="flex justify-evenly py-10">
           <div>
-            <img src={img1} alt="" />
+            <img style="height: auto; width: auto;" src={img1} alt="" />
           </div>
           <div>
             <img src={img2} alt="" />
