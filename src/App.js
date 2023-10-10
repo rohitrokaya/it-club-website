@@ -5,7 +5,7 @@ import About from "./components/About";
 import Alumni from "./components/Alumni/Alumni";
 import Events from "./components/Events/Events";
 import Notice from "./components/Notices/Notice";
-import Forms from "./components/Forms/Forms";
+
 import Support from "./components/Support/Support";
 
 function App() {
